@@ -1,0 +1,70 @@
+@charset "UTF-8";
+
+/*
+Theme Name: reachtheme
+*/
+html {
+    font-size: 100%;
+  }
+  body {
+    color: #333;
+    font-size: 1rem;
+    font-family: 'Noto Sans', 'Noto Sans JP', sans-serif;
+  }
+  a {
+    color: #333;
+    text-decoration: none;
+  }
+  img {
+    max-width: 100%;
+  }
+  li {
+    list-style: none;
+  }
+  .wrapper {
+    max-width: 1200px;
+    padding: 0 16px;
+    margin: 0 auto;
+  }
+  
+  /*-------------------------------------------
+  header
+  -------------------------------------------*/
+  #header-top{
+    display: flex;
+  }
+  #header-top h1{
+    margin:10px ;
+  }
+
+ .navi{
+    text-align:right;
+
+ }
+  #navi a {
+    color: #333;
+  }
+  #navi ul {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  #navi li {
+    font-size: 0.875rem;
+    padding: 10px 60px 10px 0;
+  }
+  
+  /*-------------------------------------------
+  SP
+  -------------------------------------------*/
+  @media screen and (max-width: 767px) {
+    /*-------------------------------------------
+    header
+    -------------------------------------------*/
+    #header .site-title {
+      padding: 20px 16px;
+    }
+    #navi {
+      overflow-x: scroll;
+    }
+  }
