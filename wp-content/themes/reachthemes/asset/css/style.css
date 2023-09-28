@@ -1,0 +1,324 @@
+@charset "UTF-8";
+
+/*
+Theme Name: reachtheme
+*/
+/* 共通css */
+* {
+  box-sizing:  border-box;
+  padding: 0;
+  margin: 0;
+}
+.font{
+  font-family: "kozuka-mincho-pro", serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+li{
+  list-style:none;
+  padding: 0px;
+  margin: 0px;
+}
+ul{
+  padding: 0px;
+  margin: 0px;
+}
+@media all and (max-width : 670px){
+	/* 480px以下に適用されるCSS（スマホ用） */
+    * {
+        box-sizing:  border-box;
+    }
+    .nav-menu{
+        display: none;
+    }
+    .nav-menu2{
+      display: initial;
+    }
+}
+
+
+/* header */
+.header-top{
+  position: relative;
+  width: 100%;
+  height: 130px;
+}
+.header-top img{
+  position: absolute;
+  top: 5%;
+  left: 5%;
+  width: 10%;
+}
+.header-top h1{
+  position: absolute;
+  top: 50%;
+  left:5%;
+  font-size: 170%;
+}
+.nav-menu{
+  position: absolute;
+  top: 35%;
+  right: 5%;
+}
+.nav-menu li{
+  float: left;
+  margin-left:20px;
+  font-size: 150%;
+  color: #000000;
+}
+.nav-menu li:hover{
+  color: #ff0000;
+}
+
+
+
+
+/* main */
+/* main共通 */
+
+.main-top{
+  position: relative;
+  
+}
+.main-top img{
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+}
+.main-top h2{
+  position: absolute;
+  top: 30%;
+  left: 5%;
+  font-size: 450%;
+}
+
+.radius-red{
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: rgb(255, 0, 0);
+}
+.text-underline{
+  padding:0px;
+  margin:0;
+  font-weight: bold;
+  border-bottom: solid 2px #c7c7c7;
+  width: 90%;
+}
+
+/* 見出し*/
+
+.main-menu{
+  margin-top:5%;
+  margin-left:5%;
+}
+.main-heading{
+  display: flex;
+}
+.main-heading h3{
+  font-size: 30px;
+}
+.heading-point {
+  margin-top: 10px;
+  max-width: 30px;
+  max-height: 30px;
+  width: 30px;
+  height: 30px;
+}
+
+
+/* 見出し１ */
+
+.heading1 li:nth-child(1) {
+  transform: translate(
+    12px,
+    11px
+  );
+}
+
+/* 見出し２ */
+
+.heading2 li:nth-child(1) {
+  transform: translate(
+    12px,
+    1px
+  );
+}
+.heading2 li:nth-child(2) {
+  transform: translate(
+    12px,
+    10px
+  );
+}
+
+/* 見出し３ */
+.heading3 li:nth-child(1) {
+  transform: translate(
+    1px,
+    1px
+  );
+}
+.heading3 li:nth-child(2) {
+  transform: translate(
+    11px,
+    4px
+  );
+}
+.heading3 li:nth-child(3) {
+  transform: translate(
+    22px,
+    6px
+  );
+}
+
+/* 見出し4 */
+.heading4 li:nth-child(1) {
+  transform: translate(
+    1px,
+    1px
+  );
+}
+.heading4 li:nth-child(2) {
+  transform: translate(
+    1px,
+    12px
+  );
+}
+.heading4 li:nth-child(3) {
+  transform: translate(
+    22px,
+    -15px
+  );
+}
+.heading4 li:nth-child(4) {
+  transform: translate(
+    22px,
+    -2px
+  );
+}
+
+
+
+/* index.php */
+/* 見出し１内容 */
+.content1 p{
+  margin-top:1%;
+  margin-left:1.5%;
+  font-size: 25px;
+}
+
+
+/* 見出し２内容 */
+.content2{
+  margin-left: 1.5%;
+  margin-top: 1%;
+  font-size: 25px;
+}
+.content2 tr{
+  margin-bottom: 3%;
+}
+.content2 td{
+  padding-left:30px ;
+}
+.content2 th{
+  float: left;
+}
+
+/* 見出し３内容 */
+.content3{
+  display: flex;
+  margin-left: 4%;
+}
+.content3-item img{
+  filter: opacity(0.4);
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.content3-item{
+  margin-top: 10%;
+  margin-right:10% ;
+  width: 50%;
+  height: 50%;
+  border: solid 1px #000000;
+  position: relative;
+  text-align: center;
+}
+.content3-item h3{
+  position: absolute;
+  top: 30%;
+  left:0px;
+  width: 100%;
+  font-size: 250%;
+}
+.content3-item a{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 170%;
+  color: #000000;
+  text-decoration: none;
+  border: solid 3px #eb7f7f;
+  border-radius: 5%;
+  height: 50px;
+  width: 300px;
+  background-color: #eb7f7f;
+}
+
+/* 見出し4 */
+.content4{
+  background-color: #DADADA;
+  margin-top: 1%;
+  padding-bottom: 1%;
+  padding-top: 1%;
+  width: 92%;
+}
+.content4-content{
+  margin-left: 1.5%;
+  margin-bottom: 1%;
+}
+.content4-ymd{
+  color: #636363;
+}
+.content4-title{
+  font-size: 20px;
+}
+
+
+
+
+/* footer */
+footer{
+  margin-top: 3%;
+}
+.footer-nav{
+  border-top: solid 1px #c7c7c7;
+  padding: 10px 0px;
+  margin-bottom: 0px;
+}
+.footer-nav ul{
+  display: flex;
+  margin-left: 4.5%;
+}
+.footer-nav a{
+  margin-right: 2%;
+  font-size: 20px;
+  text-decoration: none;
+  color: #000000;
+}
+.footer-nav li:hover{
+  color: #ff0000;
+}
+.footer-menu p{
+  margin-top: 0px;
+  text-align: center;
+  border-bottom: solid 1px #707070;
+  background-color: #000000;
+  color: #767676;
+}
+
+/* コンテンツページ */
+/* recruitment.php */
+

@@ -10,21 +10,38 @@
  */
 get_header();
  ?>
-<main>
+<div class="font">
+    <!-- トップ画像、見出し -->
         <div class="main-top">
-            <img src="<?php bloginfo('template_url') ?>../image/entrepreneur-593378_1280.png" alt="top">
-            <h1 class="font">株式会社reach</h1>
+            <img src="<?php bloginfo('template_url') ?>/asset/image/entrepreneur-593378_1280.png" alt="top">
+            <h2>株式会社reach</h2>
+        </div>
 
+        <div class="main-menu">
+            <div class="main-heading">
+                <div class="heading-point heading1">
+                    <ul>
+                        <li class="radius-red"></li>
+                    </ul>
+                </div>
+                <h3 class="text-underline">企業理念</h3>
+            </div>
+            <div class="content1">
+                <p>持続可能な社会を目指します</p>
+            </div>
         </div>
-        <div class="menu1">
-            <div class="radius-red menudot"></div>
-            <h2 class="text-underline">企業理念</h2>
-            <p>持続可能な社会を目指します</p>
-        </div>
-        <div class="menu1">
-            <div class="radius-red menudot"></div>
-            <h2 class="text-underline">会社概要</h2>
-            <div class="table">
+
+        <div class="main-menu">
+            <div class="main-heading">
+                <div class="heading-point heading2">
+                    <ul>
+                        <li class="radius-red"></li>
+                        <li class="radius-red"></li>
+                    </ul>
+                </div>
+                <h3 class="text-underline">会社概要</h3>
+            </div>
+            <div class="content2">
                 <table>
                     <tbody>
                     <tr>
@@ -51,37 +68,59 @@ get_header();
                 </table>
             </div>
         </div>
-        <div class="menu1">
-            <div class="radius-red menudot"></div>
-            <h2 class="text-underline">事業内容</h2>
-            <div class="business">
-                <img src="<?php bloginfo('template_url') ?>../image/business.jpg" alt="business">
-                <h2>イベント事業</h2>
-                <a href="#">
-                    <button>詳細はこちら</button>
-                </a>
-                <img src="<?php bloginfo('template_url') ?>../image/business.jpg" alt="business">
-                <h2>イベント事業</h2>
-                <a href="#">
-                    <button>詳細はこちら</button>
-                </a>
-            </div>
-        </div>
 
-        <div class="menu1 ">
-            <div class="radius-red menudot"></div>
-            <h2 class="text-underline">お知らせ</h2>
-            <div class="news">
-            <?php if(have_posts()) : while (have_posts()) : the_post(); ?>
-            <div>
-                    <p><?php echo get_the_date('Y.M.d') ?></p>
-                    <p><?php the_title(); ?></p>
+        <div class="main-menu">
+            <div class="main-heading">
+                <div class="heading-point heading3">
+                    <ul>
+                        <li class="radius-red"></li>
+                        <li class="radius-red"></li>
+                        <li class="radius-red"></li>
+                    </ul>
+                </div>
+                <h3 class="text-underline">事業内容</h3>
+            </div>
+            <div class="content3">
+                <div class="content3-item">
+                    <img class="content3-img" src="<?php bloginfo('template_url') ?>/asset/image/business.jpg" alt="business">
+                    <h3>イベント事業</h3>
+                    <a href="#">
+                        詳細はこちら
+                    </a>
                 </div>
 
-            <?php endwhile; endif; ?>
-        </div>
+                <div class="content3-item">
+                    <img class="content3-img" src="<?php bloginfo('template_url') ?>/asset/image/business.jpg" alt="business">
+                    <h3>ゴルフボールダイバー</h3>
+                    <a href="#">
+                        詳細はこちら
+                    </a>
+                </div>
             </div>
-    </main>
+        </div>
+
+        <div class="main-menu">
+            <div class="main-heading">
+                <div class="heading-point heading4">
+                    <ul>
+                        <li class="radius-red"></li>
+                        <li class="radius-red"></li>
+                        <li class="radius-red"></li>
+                        <li class="radius-red"></li>
+                    </ul>
+                </div>
+                <h3 class="text-underline">お知らせ</h3>
+            </div>
+            <div class="content4">
+                <?php if(have_posts()) : while (have_posts()) : the_post(); ?>
+                    <div class="content4-content">
+                        <p class="content4-ymd"><?php echo get_the_date('Y.M.d') ?></p>
+                        <p class="content4-title"><?php the_title(); ?></p>
+                    </div>
+                <?php endwhile; endif; ?>
+            </div>
+        </div>
+</div>
  <?php
  get_footer();
  ?>
