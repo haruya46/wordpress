@@ -27,7 +27,7 @@ get_header();
                 <h3 class="text-underline">企業理念</h3>
             </div>
             <div class="content1">
-                <p>持続可能な社会を目指します</p>
+                <p>あああああああああああ持続可能な社会を目指します</p>
             </div>
         </div>
 
@@ -54,7 +54,7 @@ get_header();
                     </tr>
                     <tr>
                         <th>本社所在地</th>
-                        <td>レンタルオフィス</td>
+                        <td>大阪府枚方市高塚町10-5-105</td>
                     </tr>
                     <tr>
                         <th>設立</th>
@@ -84,7 +84,7 @@ get_header();
                 <div class="content3-item">
                     <img class="content3-img" src="<?php bloginfo('template_url') ?>/asset/image/business.jpg" alt="business">
                     <h3>イベント事業</h3>
-                    <a href="#">
+                    <a href="<?php bloginfo('url'); ?>/business">
                         詳細はこちら
                     </a>
                 </div>
@@ -92,7 +92,7 @@ get_header();
                 <div class="content3-item">
                     <img class="content3-img" src="<?php bloginfo('template_url') ?>/asset/image/business.jpg" alt="business">
                     <h3>ゴルフボールダイバー</h3>
-                    <a href="#">
+                    <a href="<?php bloginfo('url'); ?>/business">
                         詳細はこちら
                     </a>
                 </div>
@@ -113,10 +113,12 @@ get_header();
             </div>
             <div class="content4">
                 <?php if(have_posts()) : while (have_posts()) : the_post(); ?>
+                <a href="<?php the_permalink(); ?>">
                     <div class="content4-content">
                         <p class="content4-ymd"><?php echo get_the_date('Y.M.d') ?></p>
                         <p class="content4-title"><?php the_title(); ?></p>
                     </div>
+                    </a>
                 <?php endwhile; endif; ?>
             </div>
         </div>

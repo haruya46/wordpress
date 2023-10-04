@@ -22,8 +22,13 @@
             <p>株式会社reach＠2023</p>
         </div>
     </footer>
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
-    <script src="<?php bloginfo('stylesheet_url');?>/index.js"></script> 
+    <script
+		src="https://code.jquery.com/jquery-1.12.4.min.js"
+		integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ="
+		crossorigin="anonymous">
+    </script>
+    <script src="<?php bloginfo('template_url') ?>/index.js"></script>
+    
 </body>
 </html>
 
